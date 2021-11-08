@@ -1,0 +1,14 @@
+<div class="col-md-12">
+    <div class="card mt-5">
+        <div class="card-header">Rasykite zinute</div>
+        <div class="card-body">
+            <form (ngSubmit)="onPostMessage(forma)" #forma="ngForm">
+                <div class="mb-3">
+                    <label for="" class="form-label">Zinutes tekstas</label>
+                    <input type="text" class="form-control" ngModel name="text" required>
+                    <button type="submit" class="btn btn-success mt-5"[disabled]="!forma.valid">Issiusti</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
